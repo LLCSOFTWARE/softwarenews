@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <dimen name="bottom_tab_font_size">10.0sp</dimen>
+    <dimen name="radio_marginTop">5.0dip</dimen>
+    <dimen name="radiobutton_drawablePadding">-17.0dip</dimen>
+    <dimen name="radiobutton_paddingLeft">3.0dip</dimen>
+</resources>

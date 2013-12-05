@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical" >
+
+    <!-- 标题部分UI -->
+
+    <RelativeLayout
+        android:id="@id/titlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_titlebar_background" >
+
+        <TextView
+            android:id="@id/titlebar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="11.0dip"
+            android:text="@string/app_name"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@id/titlebar_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6.0dip"
+            android:layout_marginTop="3.0dip"
+            android:background="@drawable/titlebar_btn_refresh_selecter" />
+        <ProgressBar
+			android:id="@id/loadnews_progress"
+			android:layout_width="25.0dip"
+			android:layout_height="25.0dip"
+			android:clickable="false"
+			android:visibility="gone"
+			android:layout_marginRight="20.0dip"
+			android:layout_marginTop="10.0dip"
+			android:layout_alignParentRight="true"
+			style="?android:attr/progressBarStyleLarge" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/categorybar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-14.0dip"
+        android:background="@drawable/image_toolbar_background" >
+
+        
+
+        <HorizontalScrollView
+            android:id="@id/category_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:orientation = "vertical"
+                android:id="@id/category_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" />
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <!-- 新闻列表部分 -->
+
+    <ListView
+        android:id="@id/news_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/news_list_items_selecter" />
+
+    <!-- 新闻底部布局 -->
+
+    <RadioGroup
+        android:id="@id/maintab_buttom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.0"
+        android:background="@drawable/image_tabbar_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@id/maintab_buttom_1"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/image_tabbar_button_news_home_selected"
+            android:text="@string/maintab_buttom_1" />
+
+        <RadioButton
+            android:id="@id/maintab_buttom_2"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/image_tabbar_button_subscription"
+            android:text="@string/maintab_buttom_2" />
+
+        <RadioButton
+            android:id="@id/maintab_buttom_3"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/image_tabbar_button_hot_news"
+            android:text="@string/maintab_buttom_3" />
+
+        <RadioButton
+            android:id="@id/maintab_buttom_4"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/image_tabbar_button_financial_index"
+            android:text="@string/maintab_buttom_4" />
+
+        <RadioButton
+            android:id="@id/maintab_buttom_5"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/image_tabbar_button_search_news"
+            android:text="@string/maintab_buttom_5" />
+    </RadioGroup>
+
+</LinearLayout>
