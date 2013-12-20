@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">新闻整合</string>
+    <string name="loadmore_btn">加载更多</string>
+    <string name="loadmore_txt">正在加载，请稍候...</string>
+    <string name="no_news">该栏目下暂时没有新闻</string>
+    <string name="no_more_news">该栏目下没有更多新闻</string>
+    <string name="load_news_failure">获取新闻失败</string>
+    <string name="no_next_news">没有下篇新闻了</string>
+    <string name="no_pre_news">没有上篇新闻了</string>
+    <string name="maintab_buttom_1">新闻</string>
+</resources>
